@@ -25,7 +25,11 @@ function App(){
       }}/>  {name}
       {/* 使用value一定要有onChange={()=>{}},event=事件參數，縮寫e*/}
       <br/>
-      請輸入姓名2:<input type="text" value={name2} onChange={changeName}/>{name2}  
+      請輸入姓名2:<input type="text" value={name2} onChange={changeName}/>{name2}
+      
+      
+      
+      <h3>teeeeeest</h3> 
 
 
       </>
