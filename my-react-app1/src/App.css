@@ -1,0 +1,115 @@
+/* src/App.css */
+*{
+  margin:0;
+  padding: 0;
+}
+
+.wrap {
+    font-family: Arial, sans-serif;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    
+  }
+  
+  .features .feature-box{
+    padding:20px;
+    text-align: center;
+
+  }
+  
+  .features .feature-box h3 {
+    color: red;
+    font-size: 1.2em;
+  }
+
+  .features .feature-box p{
+    color: gray;
+    font-size: 0.7em;
+
+  }
+  
+  .main-theme {
+    width: auto;
+    text-align: center;
+    background-color: #c90000;
+    color: white;
+    padding: 10px;
+    line-height: 50px;
+  }
+  
+  
+
+  .recommended-courses h2 {
+    text-align: center;
+    color: green;
+    line-height: 100px;
+  }
+
+  .card-box{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .course-card {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-card p{
+    font-size: 0.8rem;
+    color: #777;
+  }
+  .course-card .content{
+    color:blue;
+  }
+
+  .course-card figure{
+    display: flex;
+    height: 300px;
+  }
+
+  .course-card img {
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .course-card .original-price{
+    text-decoration: line-through;
+    color: black;
+  }
+
+  .course-card .newprice{
+    color: red;
+    font-size: 1.3rem;
+  }
+  .course-card button {
+    background-color: red;
+    color: white;
+    border: none;
+    width: 100%;
+    line-height: 30px;
+    border-radius: 5px;
+  }
+  
+  .footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+  }
