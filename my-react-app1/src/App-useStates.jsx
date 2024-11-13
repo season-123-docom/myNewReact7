@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function App(){
   //常數=>不能變動的數
-  //執行中若要改變const值，必須使用useState方法
+  //React執行中若要改變const值，必須使用useState方法
   //const num =0;
   //定義useState
   //const [變數名稱，更改變數的方法]=useState(初始值);

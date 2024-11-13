@@ -8,7 +8,7 @@ function App(){
 
 
   function changeName(e){
-    setName2(e.target.value);
+    setName(e.target.value)
   }
  
   return(
@@ -16,10 +16,10 @@ function App(){
       <h2>設計一個輸入名字欄位，並且即時顯示出來</h2>
       <hr/>
       <h3>目前文字方塊的內容:{name}</h3>
-      請輸入姓名:<input type="text" value={name} onChange={(e)=>{
+      請輸入姓名:<input type="text" value={name} onChange={()=>{
         //console.log(e);
         setName(e.target.value);
-      }}/>  {name}
+      }}/>  
       {/* 使用value一定要有onChange={()=>{}},event=事件參數，縮寫e*/}
       <br/>
       請輸入姓名2:<input type="text" value={name2} onChange={changeName}/>{name2}  

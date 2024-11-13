@@ -12,7 +12,7 @@ function App() {
         </div>
       </header>
 
-      {/* 特色 ~~~~~*/}
+      {/* 特色 */}
       <div className="features">
         <div className="feature-box">
           <h3>教學影音</h3>
