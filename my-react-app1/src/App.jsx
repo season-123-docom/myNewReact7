@@ -1,3 +1,6 @@
+//記得清空存檔，vite只能執行這個頁面的樣子
+
+//20241113上課進度3
 import {useState} from "react"
 
 function App(){

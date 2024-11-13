@@ -1,3 +1,6 @@
+//作業:看影片>寫入組件>交作業
+
+
 // src/App.jsx
 import React from "react";
 import "./App.css"; // 引入樣式
@@ -12,7 +15,7 @@ function App() {
         </div>
       </header>
 
-      {/* 特色 */}
+      {/* 特色*/}
       <div className="features">
         <div className="feature-box">
           <h3>教學影音</h3>
