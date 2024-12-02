@@ -1,0 +1,33 @@
+.wrap{
+    
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px auto;
+}
+
+.col{
+    border: 1px solid #eee;
+    border-radius:10px;
+}
+
+.row2{
+    display:flex;
+}
+
+.card-title{
+    background-color: #eee;
+    border-radius: 10px 10px 0;
+    padding: 10px ;
+    text-align: center;
+}
+
+.col2 p{
+    
+    text-align: center;
+    
+}
