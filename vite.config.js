@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:process .env .NODE_ENV === 'production'?'/myReact7/':'/',
+  base:process.env.NODE_ENV === 'production'?'/myNewReact7/':'/',
   plugins: [react()],
 })

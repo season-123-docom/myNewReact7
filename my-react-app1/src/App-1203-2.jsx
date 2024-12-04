@@ -4,10 +4,9 @@ import { useEffect } from "react";
 import axios from "axios";
 import "./style.css";
 import { IoUmbrella } from "react-icons/io5";
-
+import ShowCity from "./showCity";
 
 function App() {
-
   const [weather, setWeatherList]= useState([]);
 
 
@@ -23,7 +22,6 @@ function App() {
 
       const{ location } =data.data.cwaopendata.dataset;
       // console.log(location);
-      setWeatherList(location);
 
       // const { location } = data.data.cwaopendata.dataset; m/4
       // const options = { hour: "numeric", minute: "numeric" };
@@ -42,16 +40,7 @@ function App() {
     <>
       <div className="wrap">
         <h2>36小時天氣預報</h2>
-        {
-          setWeatherList.map((city)=>{
-            return (
-              <div className="item" key={city.locationName}>
-              <h3>{city.locationName}</h3>
-             </div>
-            )
-          }
-        )}
-       
+        <ShowCity/>
        
       </div>
     </>
