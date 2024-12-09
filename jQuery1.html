@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>非前端框架下的jQuery使用</title>
+    <!-- jQuery主程式 -->
+    <script src="./my-react-app1/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <h1>非前端框架下的jQuery使用</h1>
+
+    <hr />
+    <!-- 點選文字隱藏 -->
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+        consequuntur, laboriosam ratione velit maiores illo perferendis
+        laudantium sed est explicabo, facilis unde. Magni tempora amet ducimus
+        veritatis, aspernatur repellendus deserunt.
+      </p>
+      <p>Click1</p>
+      <p>Click2</p>
+    </div>
+
+    <script>
+      //標準法
+      $(document).ready(function () {
+        //程式撰寫區
+        $("p").click(function () {
+          //hide()=>不顯示
+          // $('p').hide(); //全部隱藏
+          $(this).hide(); //被點選的隱藏
+        });
+      });
+
+      //簡寫法
+      $(function () {
+        //程式撰寫區
+        $("h2").click(function () {
+          $(this).hide();
+        });
+      });
+    </script>
+
+<!-- 按鈕:隱藏、顯示、雙向 -->
+    <hr />
+    <p id="p1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi maxime
+      vitae minus sint. Impedit quasi cum assumenda ullam culpa harum dolorum
+      odit repellat distinctio nam quod modi fugiat, reiciendis minima.
+    </p>
+    <button id="hide">隱藏</button>
+    <button id="show">顯示</button>
+    <button id="toggle">雙向</button>
+
+    <script>
+        $(function () {
+            $('#hide').click(function(){
+                $('#p1').hide(300);
+            });
+
+            $('#show').click(function(){
+                $('#p1').show(300);
+            });
+
+            $('#toggle').click(function(){
+                $('#p1').toggle(300);
+            });
+            
+        });
+    </script>
+
+<!-- 按鈕:展開、摺疊、雙向 -->
+
+    <hr>
+
+   
+
+    <button id="btn1">展開</button>
+    <button id="btn2">摺疊</button>
+    <button id="btn3">雙向</button>
+
+    <div id="panel1" style="display: none; background-color: #eee; height: 100px; padding: 100px;">
+        我是展開的面板
+        <p id="p1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi maxime
+            vitae minus sint. Impedit quasi cum assumenda ullam culpa harum dolorum
+            odit repellat distinctio nam quod modi fugiat, reiciendis minima.
+        </p>
+    </div>
+    <script>
+        $(function(){
+            $('#btn1').click(function(){
+                $('#panel1').slideDown(500);
+            });
+            $('#btn2').click(function(){
+                $('#panel1').slideUp(500);
+            });
+            $('#btn3').click(function(){
+                $('#panel1').slideToggle(1000);
+            });
+        });
+    </script>
+
+    <hr>
+
+    <!-- 最新消息列展開與摺疊 -->
+
+     <div>
+        
+        <h2 id="'news1" >New1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h2 id="news2">New2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        
+        <hr>
+       
+     </div>
+
+     <script>
+   
+
+     </script>
+    
+
+     <!-- animate -->
+   
+      
+      <button id="'up">上</button>
+      <button id="'down">下</button>
+      <button id="'left">左</button>
+      <button id="'right">右</button>
+
+      <div class="box2"></div>
+      <style>
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            margin-top: 150px;
+            transform: scale();
+
+        }
+      </style>
+
+      <script>
+        $(function(){
+            $('#left').click(function(){
+                $('#box2').animate({left : '100px'})
+            });
+        $('#zoom').click(function(){
+            $('#zoom').click(function(){
+                $('#box2').animate({
+                    width:'',
+                    height:'',
+                    fontSize: '16px';
+                })
+            }) 
+        });
+        })
+      </script>
+  </body>
+</html>
