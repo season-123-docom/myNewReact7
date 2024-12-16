@@ -1,10 +1,13 @@
-import $ from "jquery";
-import { useEffect } from "react";
+
+//https://michalsnik.github.io/aos/
+import AOS from 'aos';
+import'./aos/dist/aos.css';
 
 export default function App() {
-  //寫法1:過時的寫法
-  //寫法2:建議的寫法
-  useEffect(()=>{
-    $(.cssAnim1).on 
-  })
-}
+  <>
+  <h1 data-aos="zoom-in">AOS-zoom-in</h1>
+  <div className="box" data-aos="fade-up" data-aos-duration="1000"></div>
+  </>
+
+ 
+  }

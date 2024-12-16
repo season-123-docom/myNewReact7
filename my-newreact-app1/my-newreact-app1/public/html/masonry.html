@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masonry-瀑布流效果</title>
+
+    <style>
+        #container{
+          display: flex;
+        }
+        .box{
+            width: 200px;
+            text-align: center;
+            margin: 2px;
+            background-color: skyblue;
+        }
+        .box img{
+            width: 100%;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div id="container">
+        <div class="box">
+            <img src="./jQuery-ex/jQuery/images/01.jpg" alt="">
+            <p>Photo1</p>
+        </div>
+        <div class="box">
+            <img src="./jQuery-ex/jQuery/images/02.jpg" alt="">
+            <p>Photo2</p>
+        </div>
+        <div class="box">
+            <img src="./jQuery-ex/jQuery/images/03.jpg" alt="">
+            <p>Photo3</p>
+        </div>
+        <div class="box">
+            <img src="./jQuery-ex/jQuery/images/04.jpg" alt="">
+            <p>Photo4</p>
+        </div>
+        <div class="box">
+            <img src="./jQuery-ex/jQuery/images/05.jpg" alt="">
+            <p>Photo5</p>
+        </div>
+        <div class="box">
+            <img src="./jQuery-ex/jQuery/images/06.jpg" alt="">
+            <p>Photo6</p>
+        </div>
+        <div class="box">
+            <img src="./jQuery-ex/jQuery/images/07.jpg" alt="">
+            <p>Photo7</p>
+        </div>
+        <div class="box">
+            <img src="./jQuery-ex/jQuery/images/8.jpg" alt="">
+            <p>Photo8</p>
+        </div>
+        <div class="box">
+            <img src="./jQuery-ex/jQuery/images/09.jpg" alt="">
+            <p>Photo9</p>
+        </div>
+
+
+    </div>
+    <script src="./jQuery-ex/jQuery/js/jquery-1.11.3.min.js"></script>
+    <script src="./jQuery-ex/jQuery/js/imagesloaded.pkgd.min.js"></script>
+    <script src="./jQuery-ex/jQuery/js/masonry.pkgd.min.js"></script>
+    <script>
+        $(function(){
+            $('#container').imagesLoaded(function(){
+                $('#container').masonry({
+                    //左右留白
+                    //
+                    //
+
+
+                })
+            })
+        })
+    </script>
+</body>
+</html>
