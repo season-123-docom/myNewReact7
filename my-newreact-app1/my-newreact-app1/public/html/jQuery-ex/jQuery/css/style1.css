@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* wrapper樣式 */
+
+#wrapper {
+    padding: 50px 0px;
+    width: 600px;
+    text-align: justify;
+}
+
+.btnArea {
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+p{
+    padding-bottom: 2em;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+/* 開啟視窗按鈕樣式 */
+.modalBtn {
+    padding: 15px 20px;
+    color: #444;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    background: #ececec;
+    border: #fff 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #666;
+    transition: all 0.2s ease-in-out;
+}
+
+.modalBtn:hover{
+    opacity: 0.7;
+}
+
+/* 遮罩元素 */
+
+/* 談出視窗頁面置中 */
